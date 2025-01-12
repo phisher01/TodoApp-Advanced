@@ -1,5 +1,5 @@
 import React from "react";
-import "./Welcome.css";
+import "./welcome.css";
 
 export default function WelcomeScreen({ onStart }) {
   return (
