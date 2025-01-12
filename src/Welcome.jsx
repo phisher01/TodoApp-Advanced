@@ -1,6 +1,7 @@
 import React from "react";
 import "./welcome.css";
 
+
 export default function WelcomeScreen({ onStart }) {
   return (
     <div className="welcome-container">
