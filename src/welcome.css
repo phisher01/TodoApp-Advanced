@@ -1,0 +1,45 @@
+/* General container for the WelcomeScreen */
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Title Styling */
+  .welcome-title {
+    font-size: 36px;
+    color: #2f3d4a;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Message text Styling */
+  .welcome-message {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Start Button Styling */
+  .start-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .start-btn:hover {
+    background-color: #0056b3;
+  }
+  

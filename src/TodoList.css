@@ -1,0 +1,158 @@
+/* Container styling */
+.todo-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f7f8fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  overflow: hidden;
+}
+
+/* Title styling */
+h4 {
+  color: #4a90e2;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Input field styling */
+.todo-input {
+  width: calc(100% - 20px);
+  padding: 12px;
+  background-color: #212528;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #dfe3e8;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  color:rgb(194, 206, 246);
+  transition: border 0.3s;
+}
+
+.todo-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Add Task button */
+.add-task-button {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-task-button:hover {
+  background-color: #357ab8;
+  transform: scale(1.05);
+}
+
+/* Task list styling */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #dfe3e8;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.todo-list li:hover {
+  transform: scale(1.02);
+}
+
+.todo-list span {
+  flex: 1;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.todo-list span[style="text-decoration-line: line-through;"] {
+  color: #888;
+}
+
+/* Delete button styling */
+.delete-btn {
+  background-color: rgb(209, 13, 13);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: rgb(177, 12, 12);
+ 
+}
+
+/* Done button styling */
+.Done-btn {
+  color: white;
+  background-color: #0e712f;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Done-btn:hover {
+  background-color: #0c5c26;
+}
+
+/* Mark All Done button */
+.alldone-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
+}
+
+.alldone-btn:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .todo-container {
+      padding: 15px;
+  }
+
+  .todo-input {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  button {
+      padding: 8px 12px;
+      font-size: 12px;
+  }
+}
