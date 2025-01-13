@@ -5,7 +5,7 @@
   text-align: center;
 }
 /* App container styles to manage the whole app's layout */
-.app-container {
+.final-container {
   font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
