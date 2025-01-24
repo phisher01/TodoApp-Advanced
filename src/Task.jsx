@@ -12,7 +12,7 @@ export default function Task({deleteTodo,markAllDone,markAsDone,todos}){
                 <span style={todo.isDone?{ textDecoration:"line-through red",textDecorationColor:"red"}:{}}>{todo.task}</span>
                 
                 <button className="delete-btn" onClick={  ()=>{  deleteTodo(todo.id)  }     }>Delete</button>
-                <button style={todo.isDone?{backgroundColor:"grey"}:{}}   className="Done-btn" onClick={  ()=>{ markAsDone(todo.id)}}>{todo.isDone?"Mark as not done":"Mark As Done"}</button>
+                <button style={todo.isDone?{backgroundColor:"#C5A24B"}:{}}   className="Done-btn" onClick={  ()=>{ markAsDone(todo.id)}}>{todo.isDone?"Mark as not done":"Mark As Done"}</button>
                 </li>
             })}
 
