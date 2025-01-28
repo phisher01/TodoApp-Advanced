@@ -15,6 +15,7 @@ export default function Final(){
 
   return (
     <div className="final-container">
+      
       {!isStarted ? <Welcome onStart={handleStart} /> : <TodoList />}
     </div>
   );

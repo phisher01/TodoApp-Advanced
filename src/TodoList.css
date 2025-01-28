@@ -10,7 +10,9 @@
   color: #333;
   overflow: hidden;
 }
-
+.task{
+  text-align: center;
+}
 /* Title styling */
 h4 {
   color: #4a90e2;
@@ -39,18 +41,31 @@ h4 {
   box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
 }
 
-/* Add Task button */
+
 .add-task-button {
-  background-color: #4a90e2;
-  color: #fff;
-  padding: 12px 15px;
-  border-radius: 8px;
-  font-size: 16px;
-  width: 100%;
-  text-align: center;
-  margin-top: 15px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  background-color: #4a90e2; /* Button color */
+  color: #fff; /* Text color */
+  padding: 12px 15px; /* Inner spacing */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Text size */
+  width: 40%; /* Button width */
+  text-align: center; /* Center text inside the button */
+  margin: 15px auto; /* Center horizontally */
+  cursor: pointer; /* Pointer on hover */
+  display: block; /* Makes the button block-level to enable centering */
+  transition: background-color 0.3s, transform 0.2s; /* Add hover effects */
+}
+
+/* Add hover effect for interaction */
+.add-task-button:hover {
+  background-color: #357abd; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly increase size */
+}
+
+/* Optional active state */
+.add-task-button:active {
+  background-color: #2b5b8a; /* Even darker on click */
+  transform: scale(1); /* Remove the hover scale effect */
 }
 
 .add-task-button:hover {
@@ -155,4 +170,28 @@ h4 {
       padding: 8px 12px;
       font-size: 12px;
   }
+}
+.todo-container h1{
+  text-align: center;
+ text-align: center; /* Center the heading */
+font-size: 28px; /* Larger font size */
+font-weight: bold; /* Bold text */
+margin-bottom: 20px; /* Add spacing below */
+color: #3b82f6; /* Bright blue color */
+text-transform: uppercase; /* Make text uppercase */
+letter-spacing: 2px; /* Add spacing between letters */
+background: linear-gradient(90deg, #3b82f6, #9333ea); /* Gradient text */
+-webkit-background-clip: text; /* Clip background to text */
+-webkit-text-fill-color: transparent; /* Make text gradient-colored */
+position: relative; /* Allow for decorative elements */
+
+}
+.todo-container h1::after {
+  content: "";
+  display: block;
+  width: 60px; /* Line width */
+  height: 4px; /* Line height */
+  background-color: #3b82f6; /* Match heading color */
+  margin: 10px auto 0; /* Center the underline */
+  border-radius: 2px; /* Rounded edges */
 }

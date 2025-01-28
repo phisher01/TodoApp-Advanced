@@ -1,0 +1,10 @@
+.edit{
+    /* background-color: black; */
+    width: 100%;
+    
+}
+.edit form{
+    
+    display: flex;
+    justify-content: space-between;
+}

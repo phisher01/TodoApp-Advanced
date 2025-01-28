@@ -1,0 +1,41 @@
+.search-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column; /* Keep items stacked vertically */
+  align-items: flex-end; /* Align items to the right */
+}
+.search{
+  text-align: right;
+
+}
+
+.search-list li {
+  display: flex;
+  justify-content: space-between; /* Adjust spacing between elements */
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #dfe3e8;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: right;
+  margin-bottom: 10px;
+  width: 50%; /* Adjust width as needed */
+  transition: transform 0.3s;
+}
+
+.search-list li:hover {
+  transform: scale(1.02);
+}
+
+.search-list span {
+  flex: 1; /* Makes the span take up space */
+  text-align: right; /* Align text inside the span */
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.search-list span[style="text-decoration-line: line-through;"] {
+  color: #888;
+}

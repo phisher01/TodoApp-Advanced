@@ -1,0 +1,76 @@
+/* Center the heading */
+.task h4 {
+    text-align: center; /* Center the heading horizontally */
+    font-size: 24px; /* Adjust font size */
+    margin-bottom: 20px;
+    color: #4a4a4a; /* Dark gray for better readability */
+  }
+  
+  /* Style the task container */
+  .task {
+    padding: 20px;  
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto; /* Center the container horizontally */
+  }
+  
+  /* Style the unordered list */
+  .todo-list {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style each task item */
+  .todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #dfe3e8;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+  }
+  
+  /* Add hover effect for tasks */
+  .todo-list li:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Style the task text */
+  .todo-list span {
+    flex: 1;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Style for completed tasks */
+  .todo-list span[style="text-decoration: line-through;"] {
+    color: #888;
+  }
+  
+  /* Style the "Mark all as done" button */
+  .alldone-btn {
+    display: block;
+    width: 100%; /* Full width button */
+    padding: 10px;
+    background-color: #4caf50; /* Green background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: backgrosund-color 0.3s;
+  }
+  
+  /* Hover effect for the button */
+  .alldone-btn:hover {
+    background-color: #45a049; /* Darker green */
+  }
+  
