@@ -62,12 +62,15 @@ let deleteSearchItem=(id)=>{
 
  
 let addNewTask=()=>{
-    setTodos((arr)=>{
-        return [...arr,{task:newTodo,id:uuidv4(),isDone:false,isOptions:false,isEdit:false}];
+    if(newTodo.length>0){
+
+        setTodos((arr)=>{
+            return [...arr,{task:newTodo,id:uuidv4(),isDone:false,isOptions:false,isEdit:false}];
+            
+        });
+        setNewTodo("");
         
-    });
-    setNewTodo("");
-    
+    }
 }
 
 
