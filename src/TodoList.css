@@ -181,7 +181,10 @@ color: #3b82f6; /* Bright blue color */
 text-transform: uppercase; /* Make text uppercase */
 letter-spacing: 2px; /* Add spacing between letters */
 background: linear-gradient(90deg, #3b82f6, #9333ea); /* Gradient text */
--webkit-background-clip: text; /* Clip background to text */
+
+background-clip: text;
+-webkit-background-clip: text; /* Required for WebKit-based browsers */
+
 -webkit-text-fill-color: transparent; /* Make text gradient-colored */
 position: relative; /* Allow for decorative elements */
 
