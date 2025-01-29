@@ -32,6 +32,7 @@
     border: 1px solid #dfe3e8;
     border-radius: 8px;
     padding: 10px;
+    height: 30px;
     margin-bottom: 10px;
     transition: transform 0.3s;
   }
@@ -57,20 +58,20 @@
   /* Style the "Mark all as done" button */
   .alldone-btn {
     display: block;
-    width: 100%; /* Full width button */
-    padding: 10px;
+    width: 80%; /* Set width to 70% */
+    padding: 12px; /* Slightly reduced padding */
     background-color: #4caf50; /* Green background */
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px; /* Slightly smaller text */
     cursor: pointer;
     text-align: center;
-    transition: backgrosund-color 0.3s;
-  }
-  
-  /* Hover effect for the button */
-  .alldone-btn:hover {
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    margin: 0 auto; /* Centers the button */
+}
+
+.alldone-btn:hover {
     background-color: #45a049; /* Darker green */
-  }
-  
+    transform: scale(1.05);
+}

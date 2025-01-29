@@ -19,7 +19,6 @@
   border: 1px solid #dfe3e8;
   border-radius: 8px;
   padding: 10px;
-  text-align: right;
   margin-bottom: 10px;
   width: 50%; /* Adjust width as needed */
   transition: transform 0.3s;
@@ -31,7 +30,8 @@
 
 .search-list span {
   flex: 1; /* Makes the span take up space */
-  text-align: right; /* Align text inside the span */
+  text-align: left; /* Align text inside the span */
+  /* text-align: left; */
   margin-right: 10px;
   font-size: 16px;
 }

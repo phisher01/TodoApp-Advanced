@@ -41,16 +41,15 @@ h4 {
   box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
 }
 
-
 .add-task-button {
   background-color: #4a90e2; /* Button color */
   color: #fff; /* Text color */
-  padding: 12px 15px; /* Inner spacing */
+  padding: 10px 15px; /* Reduced vertical padding */
   border-radius: 8px; /* Rounded corners */
-  font-size: 16px; /* Text size */
+  font-size: 14px; /* Slightly smaller text */
   width: 40%; /* Button width */
   text-align: center; /* Center text inside the button */
-  margin: 15px auto; /* Center horizontally */
+  margin: 10px auto; /* Center horizontally */
   cursor: pointer; /* Pointer on hover */
   display: block; /* Makes the button block-level to enable centering */
   transition: background-color 0.3s, transform 0.2s; /* Add hover effects */
@@ -61,6 +60,7 @@ h4 {
   background-color: #357abd; /* Darker blue on hover */
   transform: scale(1.05); /* Slightly increase size */
 }
+
 
 /* Optional active state */
 .add-task-button:active {
@@ -79,7 +79,7 @@ h4 {
   padding: 0;
   margin: 20px 0;
 }
-
+/* 
 .todo-list li {
   display: flex;
   justify-content: space-between;
@@ -87,10 +87,10 @@ h4 {
   background-color: #fff;
   border: 1px solid #dfe3e8;
   border-radius: 8px;
-  padding: 10px;
+  padding: 100px;
   margin-bottom: 10px;
   transition: transform 0.3s;
-}
+} */
 
 .todo-list li:hover {
   transform: scale(1.02);
@@ -137,23 +137,7 @@ h4 {
   background-color: #0c5c26;
 }
 
-/* Mark All Done button */
-.alldone-btn {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 8px;
-  font-size: 14px;
-  margin-top: 15px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  width: 100%;
-}
 
-.alldone-btn:hover {
-  background-color: #388e3c;
-  transform: scale(1.05);
-}
 
 /* Responsive Design */
 @media (max-width: 600px) {
